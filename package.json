@@ -1,0 +1,32 @@
+{
+  "name": "rss",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "author": "Your Name <you@example.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "live": "ts-node-dev --respawn src/app.ts --dev=1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.709.0",
+    "@types/axios": "^0.14.4",
+    "@types/handlebars": "^4.1.0",
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/xml2js": "^0.4.14",
+    "axios": "^1.7.9",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "handlebars": "^4.7.8",
+    "mysql2": "^3.11.5",
+    "node-cron": "^3.0.3",
+    "promise-mysql": "^5.2.0",
+    "rss-parser": "^3.13.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2",
+    "xml2js": "^0.6.2"
+  }
+}

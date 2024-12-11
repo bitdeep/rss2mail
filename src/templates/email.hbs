@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .post-title {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .post-content {
+            color: #34495e;
+            line-height: 1.6;
+        }
+        .post-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Latest RSS Updates</h1>
+    {{#each posts}}
+    <div class="post">
+        <h2 class="post-title">{{title}}</h2>
+        <div class="post-content">{{{content}}}</div>
+        <a href="{{link}}" class="post-link">Read more</a>
+    </div>
+    {{/each}}
+</body>
+</html>
